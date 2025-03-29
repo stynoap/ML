@@ -119,3 +119,20 @@ La regressione lineare è uno strumento potente che ti permette di capire e mode
 - **Ingegneria**: Modellare il comportamento di un sistema fisico.
 
 In sintesi, la regressione lineare ti permette di comprendere, quantificare e prevedere relazioni tra variabili, rendendola uno strumento fondamentale in molte discipline.
+### Come calcolare **R²**
+
+Il coefficiente di determinazione **R²** misura quanto bene il modello di regressione lineare si adatta ai dati. Indica la proporzione della variazione della variabile dipendente (**Y**) che è spiegata dalla variabile indipendente (**X**) attraverso il modello.
+
+#### Formula di **R²**
+**R² = 1 - (SS_res / SS_tot)**
+
+Dove:
+- **SS_res** (Somma dei quadrati dei residui): La somma delle differenze al quadrato tra i valori osservati (**yᵢ**) e quelli predetti (**ŷᵢ**):
+  **SS_res = Σ(yᵢ - ŷᵢ)²**
+- **SS_tot** (Somma totale dei quadrati): La somma delle differenze al quadrato tra i valori osservati (**yᵢ**) e la media dei valori osservati (**ȳ**):
+  **SS_tot = Σ(yᵢ - ȳ)²**
+
+#### Interpretazione di **R²**
+- **R² vicino a 1**: Il modello spiega bene i dati.
+- **R² vicino a 0**: Il modello non spiega i dati.
+- **R² negativo**: Può accadere se il modello è molto scarso (ad esempio, se non è lineare).
